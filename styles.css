@@ -1,17 +1,45 @@
 
 nav{
-    font-size: 45px;
-    color: #00b8a9;
+    
+    margin:0;
+    padding:0;
+    
+    text-align: center;
+
+    font-size: 80px;
+    color: #8c82fc;
     font-family: 'Major Mono Display', monospace;
     text-transform: uppercase;
-    border-bottom: 2px solid #00b8a9;
-    width: 30%;
-    margin-left: calc(10%/9);
-    padding: 20px 0;
-    text-shadow: 1px 1px 2px #f6416c;
+    
+
+
+
+
 }
 
 body{
-    background-color:yellow;
+    background-color:#defcf9;
+}
+
+img{
+    width: 30%;
+    margin: calc(10%/9);
+    border-radius:25px;
+    border:2px solid #f67280;
+    box-shadow: 10px 10px 5px #dcd6f7;
+
+}
+
+h2{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: white;
+
+    border-radius:25px;
+    border:2px solid #f67280;
+    background-color:#f67280;
+    box-shadow: 10px 10px 5px #dcd6f7;
+    width: 30%;
+
 }
 
