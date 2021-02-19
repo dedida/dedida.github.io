@@ -12,13 +12,6 @@ nav{
 }
 
 body{
-    background-color: #f8f3d4;
+    background-color:yellow;
 }
-img{
-    width: 30%;
-    margin: calc(10%/9);
-    border-radius:25px;
-    border:2px solid #f67280;
-    box-shadow: 10px 10px 5px #dcd6f7;
 
-}
