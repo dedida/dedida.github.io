@@ -3,17 +3,13 @@ nav{
     
     margin:0;
     padding:0;
-    
+
     text-align: center;
 
     font-size: 80px;
     color: #8c82fc;
     font-family: 'Major Mono Display', monospace;
     text-transform: uppercase;
-    
-
-
-
 
 }
 
@@ -39,7 +35,30 @@ h2{
     border:2px solid #f67280;
     background-color:#f67280;
     box-shadow: 10px 10px 5px #dcd6f7;
-    width: 30%;
+    width: 75%;
 
 }
+
+section{
+    width: 75%;
+}
+
+p{
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+iframe {
+    border-radius:25px;
+    border:2px solid #f67280;
+    box-shadow: 10px 10px 5px #dcd6f7;
+}
+code {
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+  }
 
