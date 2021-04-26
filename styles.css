@@ -6,35 +6,42 @@ nav{
 
     text-align: center;
 
-    font-size: 80px;
-    color: #8c82fc;
-    font-family: 'Major Mono Display', monospace;
+    font-size: 100px;
+    color: #7eca9c;
+    text-shadow: 8px 8px  #1c1427;
+    font-family: 'Chakra Petch', sans-serif;
+
     text-transform: uppercase;
 
 }
 
 body{
-    background-color:#defcf9;
+    background-color:#40394a;
 }
+
 
 img{
     width: 30%;
     margin: calc(10%/9);
     border-radius:25px;
-    border:2px solid #f67280;
-    box-shadow: 10px 10px 5px #dcd6f7;
+    border:2px solid #ccffbd;
+    box-shadow: 10px 10px 5px #1c1427;
 
 }
+#diagram{
 
+    width: 70%;
+
+}
 h2{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Chakra Petch', sans-serif;
     text-align: center;
-    color: white;
+    color: #1c1427;
 
     border-radius:25px;
-    border:2px solid #f67280;
-    background-color:#f67280;
-    box-shadow: 10px 10px 5px #dcd6f7;
+    border:2px solid #ccffbd;
+    background-color:#ccffbd;
+    box-shadow: 10px 10px 5px #1c1427;
     width: 75%;
 
 }
@@ -44,17 +51,17 @@ section{
 }
 
 p{
+    color: white;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 
 iframe {
     border-radius:25px;
-    border:2px solid #f67280;
-    box-shadow: 10px 10px 5px #dcd6f7;
+    border:2px solid #96bb7c;
+    box-shadow: 10px 10px 5px #1c1427;
 }
 code {
     margin-left: auto;
@@ -64,5 +71,9 @@ code {
     background-color: #f1f1f1;
     padding: 2px;
     font-size: 105%;
+  }
+
+  a{
+      color:#ccffbd;
   }
 

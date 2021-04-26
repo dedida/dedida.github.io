@@ -4,72 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakout</title>
+    <title>Platformer Engine</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Bungee&family=DotGothic16&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <nav>Break/out</nav>
+    <nav>Too Busy Engine</nav>
 
     <div ALIGN=CENTER>
-        <h2> Video Trailer Level 1 Playthrough (˘︶˘).｡*♡</h2>
+        <h2>Trailer</h2>
     </div>
-    <div ALIGN=CENTER><iframe width="560" height="315" src="https://www.youtube.com/embed/JGmmu-5Detk" frameborder="0"
+    <div ALIGN=CENTER><iframe width="560" height="315" src="https://www.youtube.com/embed/rLl9XBg7wSs" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe></div>
 
+    <div ALIGN=CENTER>
+        <h2>Images</h2>
+        <section><img src="photos/menu.png"><img src="photos/game.png">
+        </section>
+        <section><img src="photos/sprite_tool.png"><img src="photos/tile_maker.png">
+        </section>
+    </div>
 
     <div ALIGN=CENTER>
-        <h2> Images (*❛‿❛)→</h2>
-    </div>
-    <div ALIGN=CENTER>
-        <section><img src="photos/language.png"><img src="photos/game.png"><img src="photos/win.png"></section>
-        <section><img src="photos/level2.png"><img src="photos/lose.png"><img src="photos/level3.png"></section>
-    </div>
-
-    <div ALIGN=CENTER>
-        <h2> Gameplay &lt(￣︶￣)> </h2>
+        <h2>Engine Abilities</h2>
     </div>
     <p>
-        The goal of the game is to break all the bricks with the ball. You can toggle the paddle left and right to hit
-        the ball using the A and D key or the left and right arrow keys. But be careful don’t let the ball fall through
-        the bottom or you will lose a life! You have 3 lives for each level. Currently there are only 3 levels, but
-        there may be more in the future!</p>
-    <p>Also you select a language before the game starts. Press S for Spanish and E for English. If you want to switch
-        between languages during the game you can, just hit S or E again. </p>
+        With this engine you can write a game in Python. SDL2 features are used in C++ functions that are exposed via
+        Pybind11. We have recreated the game Galaga in python, but other games can be created as well! There is also a
+        tile map editor you can use to create your own tile map, by putting in the complete file path of an image you
+        want to use and the tile map dimensions you want. You can also preview sprite animations, by using the sprite
+        animation tool and putting in the complete file path of the image you want to use, how big you want the sprite
+        to be, and the start and end frame number.</p>
 
     <div ALIGN=CENTER>
-        <h2> Post Mortem ┌(・。・)┘♪</h2>
+        <h2> Post Mortem </h2>
     </div>
-    <p>Looking back at my experience making the Breakout clone I realize there are so many things I wish I would
-        have done differently, or if I had the time I would have done. </p>
-    <p>One of the initial things I wanted to do, but did not have enough time for was making the bricks all
-        different colors, or at least have more than just blue bricks. In the level file I could have had different
-        numbers signify different brick colors in the layout. I would have also liked to add in the option to mute
-        the music or vary the sound level of it. I also think it would have been nice if different levels had
-        different background songs playing. Also maybe with different levels the color of the paddle could have
-        changed, or even its size. The ball’s color and size could have changed too. This would have added more
-        variety and keep the game more visually appealing, so it would not grow stale.
+    <p> A project like a game engine is never fully completed. If there was more time there are many things we would
+        have like to try to implement. We would have liked to try to optimize our collision handling system, perhaps by
+        implement a broad phase and narrow phase system. Also we could have exposed more SDL2 features to python, so
+        users creating their game in python could have more creative control when developing the game.
     </p>
-    <p> Besides stylistic changes, in hindsight I realize I should have utilized my resource manager more. I was
-        under the idea that the resource manager should only keep track of the image files in use, but I should have
-        used it to load the different text textures and surfaces as well. I would also dedicate more time to
-        smoothing out the physics in my game because there were times in the gameplay where I noticed brief
-        glitches. </p>
+    <p>We would have also liked to add other tools. It would have been nice if we could have created a paint like tool
+        that users could use to create their own background images and characters, instead of making it on another
+        platform and saving it and loading it from there. Another tool that would have been useful is a simulation tool
+        used to view how collisions are handled.
+    </p>
+
+    <div ALIGN=CENTER>
+        <h2> Class Hierarchy </h2>
+        <section><img src="photos/diagram1.png"><img src="photos/diagram2.png">
+        </section>
+    </div>
+
 
 
     <div ALIGN=CENTER>
-        <h2> Project Files & Binaries ƪ(˘⌣˘)ʃ</h2>
+        <h2> Project Files, Binaries, & Documentation </h2>
     </div>
-    <p>The following libraries are needed in order to run the game: SDL2, SDL_Mixer, SDL_ttf, and SDL_image.</p>
-    <p>Run the following in order to build the executable <code> python build.py </code>. After you can run the
-        following to play the game <code> ./bin/game </code> .</p>
-    <p>Entire Project including Documentation: <a href="Game.zip">download project files</a></p>
-    <p>Binary for Mac OS: <a href="bin/game">download binary file</a> </p>
+    <p>The following libraries are needed in order to run the game: Tkinter, PyQT, Pybind11, SDL2, SDL_Mixer, SDL_ttf,
+        and
+        SDL_image.
+    </p>
+    <p>Run the following in order to build the executable <code> python build.py</code>. After you can run the
+        following to start the engine and play a game, use the sprite tool, and tile map tool.
+        <code> ./bin/start</code> .</p>
+    <p>Entire Project: <a href="Engine.zip">download project files</a></p>
+    <p>Binary for Mac OS: <a href="bin/start">download binary file</a> </p>
+    <p>Documentation: <a href="docs.zip">download doxygen generated files</a> </p>
+
 
 
 </body>
